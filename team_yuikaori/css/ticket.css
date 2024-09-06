@@ -1,0 +1,766 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	index.html
+------------------------------------------------------------*/
+#gNavi .navi02 a img {
+	visibility: hidden;
+}
+
+#conts .mainConts {
+	padding: 60px 33px 160px;
+	min-height: 800px;
+}
+
+#conts .mainConts .title {
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+#conts .mainConts h2 {
+	background: url(../img/common/h2_bg.gif) no-repeat left 1px;
+	font-size: 20px;
+	margin-bottom: 27px;
+	padding-left: 40px;
+}
+
+#conts .mainConts .textUl {
+	margin: 0 0px 0 0px;
+}
+
+#conts .mainConts .textUl dd {
+	font-weight:normal;
+	font-size:16px;
+	color: #727171;
+	margin-top: 10px;
+}
+
+#conts .mainConts .textUl dd a:hover{
+	text-decoration:underline;
+}
+
+
+#conts .mainConts .textUl li {
+	border-bottom: 1px solid #ff8e7a;
+/* 	background: url(../img/ticket/icon.png) no-repeat 41px 40px; */
+/* 	background-position: center bottom; */
+/* 	cursor: pointer; */
+	padding: 22px 10px 20px;
+	zoom: 1;
+	text-align: center;
+}
+
+#conts .mainConts .speSpan01 {
+	background-color: #F58989;
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.2;
+	padding: 4px 9px 2px;
+ 	position: relative;
+}
+
+#conts .mainConts .speSpan02 {
+	background-color: #5EA3D1;
+	font-size: 12px;
+	margin: 0;
+	padding: 4px 17px 2px;
+}
+
+#conts .mainConts .textUl li dl {
+	cursor: pointer
+}
+
+#conts .mainConts .textUl li dt {
+	padding-bottom: 10px;
+	color: #F58989;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#conts .mainConts .textUl li dd a {
+	color: #727171;
+	text-decoration:underline;
+	
+}
+
+#conts .mainConts .textUl li dd a:hover {
+	text-decoration: underline;
+}
+
+#conts .mainConts .textUl li .btmBox .textDl a {
+	color: #0043a8;
+	text-decoration: underline;
+}
+
+#conts .mainConts .textUl li .btmBox .textDl a:hover {
+	text-decoration: none;
+}
+
+#conts .mainConts .textUl li .jsText {
+		border-top: 1px solid #ff8e7a;
+		margin: 10px 0;
+		display: none;
+}
+
+#conts .mainConts .textUl li .jsText a {
+	display: block;
+	width: 135px;
+	margin: 0 auto;
+}
+
+#conts .mainConts .textP {
+	line-height: 1.8;
+	padding: 30px 0 30px;
+	text-align: center;
+}
+
+#conts .mainConts .btmBox {
+/* 	width: 540px; */
+}
+
+#conts .mainConts .btmBox .title {
+	background: url(../img/ticket/line.gif) repeat-x left bottom;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 4px;
+}
+
+#conts .mainConts .btmBox .title01 {
+	margin-bottom: 35px;
+}
+
+#conts .mainConts .btmBox .textDl {
+	margin-bottom: 39px;
+}
+
+#conts .mainConts .btmBox .textDl01 {
+	margin-bottom: 0;
+}
+
+#conts .mainConts .btmBox .textDl dt {
+	margin-bottom: 9px;
+}
+
+#conts .mainConts .btmBox .textDl dd {
+	margin-bottom: 38px;
+}
+
+#conts .mainConts .btmBox .textDl dd ul {
+	padding-top: 7px;
+}
+
+#conts .mainConts .btmBox .textDl dd ul li {
+	background: none;
+	border: none;
+	padding: 0 0 2px 1.2em;
+	text-indent: -1.2em;
+	font-size: 12px;
+}
+
+#conts .mainConts .btmBox .textDl dt .textBox {
+	border: 1px solid #E1E1E1;
+	margin: 0 auto 27px;
+	padding: 25px 0;
+	width: 354px;
+}
+
+#conts .mainConts .btmBox .textDl dt .textBox p {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center; 
+}
+
+#conts .mainConts .btmBox .btmClose {
+	display: none;
+	margin: 0 auto;
+	width: 135px;
+}
+
+#conts .mainConts .textUl li .jsText img {
+	display: block;
+}
+
+#conts .mainConts .textUl li .jsText .imgclose {
+	display: none;
+}
+	
+#conts .mainConts .textUl li .jsText .on img {
+	display: none;
+}
+	
+#conts .mainConts .textUl li .jsText .on .imgclose {
+	display: block;
+}
+
+table{
+	border-spacing:0;
+	border-collapse: collapse;
+}
+
+table td{
+	
+	border: solid 1px #ddd;
+	padding: 10px;
+}
+
+.br-sp{
+	display: none;
+}
+
+@media all and (min-width: 0) and (max-width: 640px)  {
+	.br-sp{
+		display: block;
+	}
+	
+	#conts .mainConts {
+		padding: 22px 8% 28px;
+		min-height: inherit;
+	}
+	
+	#conts .mainConts h2 {
+		background: url(../img/common/h2_bg.gif) no-repeat left top;
+		background-size: 21px 21px;
+		font-size: 14px;
+		margin-bottom: 10px;
+		padding-left: 28px;
+	}
+	
+	#conts .mainConts .textUl {
+		margin: 0;
+	}
+	
+	#conts .mainConts .textUl li { 
+		background: none;
+		margin-bottom: 5px;
+		padding: 10px;
+	}
+	
+	#conts .mainConts .textUl li dt {
+		font-size: 10px;
+	}
+	
+	#conts .mainConts .textUl li dd {
+		font-size: 13px;
+	}
+	
+	#conts .mainConts .speSpan01 {
+		font-size: 9px;
+	}
+	
+	#conts .mainConts .speSpan02 {
+		margin: 0;
+		font-size: 9px;
+	}
+	
+	#conts .mainConts .textUl li .jsText {
+		border-top: 1px solid #ff8e7a;
+		display: block;
+		margin: 10px 0;
+	}
+	
+	#conts .mainConts .textUl li .jsText a {
+		display: block;
+		margin: 0 auto;
+		width: 25%;
+	}
+	
+	#conts .mainConts .textUl li .jsText img {
+		width: 100%;
+		display: block;
+	}
+	
+	#conts .mainConts .textUl li .jsText .imgclose {
+		display: none;
+	}
+	
+	#conts .mainConts .textUl li .jsText .on img {
+		display: none;
+	}
+	
+	#conts .mainConts .textUl li .jsText .on .imgclose {
+		display: block;
+	}
+	
+	#conts .mainConts .textP {
+		line-height: 1.3;
+		padding: 0 0 16px;
+		text-align: center;
+		margin-top: 4%;
+	}
+	
+	#conts .mainConts .btmBox {
+		width: auto;
+		margin: 0;
+	}
+	
+	#conts .mainConts .btmBox .title {
+		font-size: 13px;
+		margin-bottom: 10px;
+		padding-bottom: 2px;
+	}
+	
+	#conts .mainConts .btmBox .textDl {
+		margin-bottom: 32px;
+	}
+	
+	#conts .mainConts .btmBox .textDl01 {
+		margin-bottom: 15px;
+	}
+	
+	#conts .mainConts .btmBox .textDl dt {
+		margin-bottom: 3px;
+	}
+	
+	#conts .mainConts .btmBox .textDl dd {
+		font-size: 12px;
+		line-height: 1.3;
+		margin-bottom: 10px;
+	}
+	
+	#conts .mainConts .btmBox .textDl dd ul li {
+		border: none;
+		font-size: 11px;
+		line-height: 1.5;
+		margin-bottom: 0;
+		padding: 0 0 2px 1em;
+		text-indent: -1em;
+	}
+	
+	#conts .mainConts .btmBox .textDl dt .textBox {
+		border: 1px solid #E1E1E1;
+		margin-bottom: 0;
+		padding: 4px;
+		width: auto;
+	}
+	
+	#conts .mainConts .btmBox .textDl dt .textBox p {
+		border: 1px solid #E1E1E1;
+		font-size: 13px;
+		padding: 15px 0;
+	}
+	#conts .mainConts .btmBox .textDl dt .textBox p span{
+		position:relative; display:block;
+	}
+	
+	#conts .mainConts .btmBox .textDl dd {
+		margin-bottom: 20px;
+	}
+	
+	#conts .mainConts .btmBox .textDl dd a {
+		color: #0043a8;
+		text-decoration: underline;
+	}
+	
+	#conts .mainConts .btmBox .btmClose {
+		display: block;
+		margin: 0 auto;
+		width: 25%;
+	}
+	
+	#conts .mainConts .btmBox .btmClose img {
+		width: 100%;
+	}
+}
+
+.pcmode #gNavi .navi02 a img {
+	visibility: hidden;
+}
+
+.pcmode #conts .mainConts {
+	padding: 60px 33px 160px;
+	min-height: 800px;
+}
+
+.pcmode #conts .mainConts .title {
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.pcmode #conts .mainConts h2 {
+	background: url(../img/common/h2_bg.gif) no-repeat left 1px;
+	font-size: 20px;
+	margin-bottom: 27px;
+	padding-left: 40px;
+}
+
+.pcmode #conts .mainConts .textUl {
+	margin: 0 43px 0 40px;
+}
+
+.pcmode #conts .mainConts .textUl li {
+	border-bottom: 1px solid #ff8e7a;
+	background: url(../img/ticket/icon.png) no-repeat 41px 40px;
+	background-position: center bottom;
+/* 	cursor: pointer; */
+	padding: 22px 10px 70px;
+	zoom: 1;
+	text-align: center;
+}
+
+.pcmode #conts .mainConts .speSpan01 {
+	background-color: #F56565;
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.2;
+	padding: 4px 9px 2px;
+ 	position: relative;
+}
+
+.pcmode #conts .mainConts .speSpan02 {
+	background-color: #003564;
+	font-size: 12px;
+	margin: 0;
+	padding: 4px 17px 2px;
+}
+
+.pcmode #conts .mainConts .textUl li dt {
+	padding-bottom: 10px;
+	color: #e83828;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.pcmode #conts .mainConts .textUl li dd a {
+	color: #17293f;
+	text-decoration: none;
+}
+
+.pcmode #conts .mainConts .textUl li dd a:hover {
+	text-decoration: underline;
+}
+
+.pcmode #conts .mainConts .textUl li .btmBox .textDl a {
+	color: #0043a8;
+	text-decoration: underline;
+}
+
+.pcmode #conts .mainConts .textUl li .btmBox .textDl a:hover {
+	text-decoration: none;
+}
+
+.pcmode #conts .mainConts .textUl li .jsText {
+		border-top: 1px solid #4E4E4E;
+		margin: 10px 0;
+		display: none;
+}
+
+.pcmode #conts .mainConts .textUl li .jsText a {
+	display: block;
+	width: 135px;
+	margin: 0 auto;
+}
+
+.pcmode #conts .mainConts .textP {
+	line-height: 1.8;
+	padding: 30px 0 30px;
+	text-align: center;
+}
+
+.pcmode #conts .mainConts .btmBox {
+	width: 540px;
+}
+
+.pcmode #conts .mainConts .btmBox .title {
+	background: url(../img/ticket/line.gif) repeat-x left bottom;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 4px;
+}
+
+.pcmode #conts .mainConts .btmBox .title01 {
+	margin-bottom: 35px;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl {
+	margin-bottom: 39px;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl01 {
+	margin-bottom: 0;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl dt {
+	margin-bottom: 9px;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl dd {
+	margin-bottom: 38px;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl dd ul {
+	padding-top: 7px;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl dd ul li {
+	background: none;
+	border: none;
+	padding: 0 0 2px 1.2em;
+	text-indent: -1.2em;
+	font-size: 12px;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl dt .textBox {
+	border: 1px solid #E1E1E1;
+	margin: 0 auto 27px;
+	padding: 25px 0;
+	width: 354px;
+}
+
+.pcmode #conts .mainConts .btmBox .textDl dt .textBox p {
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center; 
+}
+
+.pcmode #conts .mainConts .btmBox .btmClose {
+	display: none;
+	margin: 0 auto;
+	width: 135px;
+}
+
+.pcmode #conts .mainConts .textUl li .jsText img {
+	display: block;
+}
+
+.pcmode #conts .mainConts .textUl li .jsText .imgclose {
+	display: none;
+}
+	
+.pcmode #conts .mainConts .textUl li .jsText .on img {
+	display: none;
+}
+	
+.pcmode #conts .mainConts .textUl li .jsText .on .imgclose {
+	display: block;
+}
+
+.spmode	#conts .mainConts {
+	padding: 22px 6% 28px;
+	min-height: inherit;
+}
+	
+.spmode	#conts .mainConts h2 {
+	background: url(../img/common/h2_bg.gif) no-repeat left top;
+	background-size: 21px 21px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	padding-left: 28px;
+}
+	
+.spmode	#conts .mainConts .textUl {
+	margin: 0;
+}
+	
+.spmode	#conts .mainConts .textUl li {
+/*
+	border: 1px solid #CFCFCF;
+	border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+*/     
+	background: none;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+	
+.spmode	#conts .mainConts .textUl li dt {
+	font-size: 10px;
+}
+	
+.spmode	#conts .mainConts .textUl li dd {
+	font-size: 13px;
+}
+	
+.spmode	#conts .mainConts .speSpan01 {
+	margin-left: 15px;
+	font-size: 9px;
+}
+	
+.spmode	#conts .mainConts .speSpan02 {
+	margin: 0;
+	font-size: 9px;
+}
+	
+.spmode	#conts .mainConts .textUl li .jsText {
+	border-top: 1px solid #4E4E4E;
+	display: block;
+	margin: 10px 0;
+}
+	
+.spmode	#conts .mainConts .textUl li .jsText a {
+	display: block;
+	margin: 0 auto;
+	width: 25%;
+}
+	
+.spmode	#conts .mainConts .textUl li .jsText img {
+	width: 100%;
+	display: block;
+}
+	
+.spmode	#conts .mainConts .textUl li .jsText .imgclose {
+	display: none;
+}
+	
+.spmode	#conts .mainConts .textUl li .jsText .on img {
+	display: none;
+}
+	
+.spmode	#conts .mainConts .textUl li .jsText .on .imgclose {
+	display: block;
+}
+	
+.spmode	#conts .mainConts .textP {
+	line-height: 1.3;
+	padding: 0 0 16px;
+	text-align: left;
+}
+	
+.spmode	#conts .mainConts .btmBox {
+	width: auto;
+	margin: 0;
+}
+	
+.spmode	#conts .mainConts .btmBox .title {
+	font-size: 13px;
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl {
+	margin-bottom: 32px;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl01 {
+	margin-bottom: 15px;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl dt {
+	margin-bottom: 3px;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl dd {
+	font-size: 12px;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl dd ul li {
+	border: none;
+	font-size: 11px;
+	line-height: 1.5;
+	margin-bottom: 0;
+	padding: 0 0 2px 1em;
+	text-indent: -1em;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl dt .textBox {
+	border: 1px solid #E1E1E1;
+	margin-bottom: 0;
+	padding: 4px;
+	width: auto;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl dt .textBox p {
+	border: 1px solid #E1E1E1;
+	font-size: 13px;
+	padding: 15px 0;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl dd {
+	margin-bottom: 20px;
+}
+	
+.spmode	#conts .mainConts .btmBox .textDl dd a {
+	color: #0043a8;
+	text-decoration: underline;
+}
+	
+.spmode	#conts .mainConts .btmBox .btmClose {
+	display: block;
+	margin: 0 auto;
+	width: 25%;
+}
+	
+.spmode	#conts .mainConts .btmBox .btmClose img {
+	width: 100%;
+}
+
+/*------*/
+
+.hearty_party_20141017_table{
+	width: 150px;
+	border-collapse: 2px;
+}
+
+.hearty_party_20141017_table th{
+	height: 20px;
+	width: 50px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.hearty_party_20141017_table{
+	border: none;
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+.hearty_party_20141017_table td rowspan{
+	width: 20px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.hearty_party_20141017_table td{
+	height: 20px;
+	width: 200px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+/*------*/
+
+.hearty_party_20141101_table{
+	width: 150px;
+	border-collapse: 2px;
+}
+
+.hearty_party_20141101_table th{
+	height: 20px;
+	width: 50px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.hearty_party_20141101_table{
+	border: none;
+	border-collapse: separate;
+	border-spacing: 2px;
+}
+
+.hearty_party_20141101_table td rowspan{
+	width: 20px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.hearty_party_20141101_table td{
+	height: 20px;
+	width: 200px;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+#conts .mainConts .btmBox .textDl dt .textBox p span {
+    position: relative;
+    display: block;
+}
+
+/*------*/

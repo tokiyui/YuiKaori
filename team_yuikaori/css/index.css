@@ -1,0 +1,67 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	index.html
+------------------------------------------------------------*/
+#gNavi .navi05 a img {
+	visibility: hidden;
+}
+
+#sideBar .sideBox {
+	padding-bottom: 30px;
+}
+
+#conts .photo img {
+	display: block;
+	vertical-align: baseline;
+}
+#conts .photo_sp img {
+	display: none;
+}
+
+*+html #sideBar .sBox {
+	padding-bottom: 27px;
+}
+
+@media all and (min-width: 0) and (max-width: 640px) {
+	#conts .photo img {
+		display: none;
+	}
+	#conts .photo_sp img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.pcmode #gNavi .navi05 a img {
+	visibility: hidden;
+}
+
+.pcmode #sideBar .sideBox {
+	padding-bottom: 30px;
+}
+
+.pcmode #conts .photo img {
+	display: block;
+	vertical-align: baseline;
+}
+.pcmode #conts .photo_sp img {
+	display: none;
+}
+
+.pcmode *+html #sideBar .sBox {
+	padding-bottom: 27px;
+}
+
+.spmode #conts .photo {
+	clear: both;
+	display: block;
+}
+	
+.spmode #conts .photo img {
+	display: none;
+}
+
+.spmode #conts .photo_sp img {
+	display: block;
+	width: 100%;
+}

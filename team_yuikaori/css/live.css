@@ -1,0 +1,200 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	index.html
+------------------------------------------------------------*/
+#gNavi .navi01 a img {
+	visibility: hidden;
+}
+
+#conts .mainConts .title {
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+#conts .mainConts .title span {
+	display: block;
+	font-size: 25px;
+	padding-top: 8px;
+}
+
+#conts .mainConts .tabBox {
+	margin-bottom: 50px;
+}
+
+#conts .mainConts .tabBox table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#conts .mainConts .tabBox table thead th {
+	border: 1px solid #ff8e7a;
+	background-color: #ffccc5;
+	font-size: 12px;
+	line-height: 1.6;
+	padding: 7px 5px;
+	text-align: center;
+	vertical-align: middle;
+	word-wrap: break-all;
+}
+
+#conts .mainConts .tabBox table td {
+	border: 1px solid #ff8e7a;
+	font-size: 12px;
+	line-height: 1.6;
+	padding: 7px 5px;
+	text-align: center;
+	vertical-align: middle;
+	word-wrap: break-all;
+}
+
+#conts .mainConts h2 {
+/* 	background: url(../img/common/h2_bg.gif) no-repeat left 1px; */
+	padding: 5px 0 5px;
+	font-size: 18px;
+	margin-bottom: 30px;
+	border-top: solid 3px #ff8e7a;
+	border-bottom: solid 1px #ff8e7a;
+	text-align: center;
+}
+
+@media all and (min-width: 0) and (max-width: 640px)  {
+	#conts .mainConts .title {
+		font-size: 16px;
+		margin-bottom: 19px;
+	}
+	
+	#conts .mainConts .title span {
+		font-size: 17px;
+		padding-top: 5px;
+	}
+		
+	#conts .mainConts .tabBox {
+		margin-bottom: 40px;
+	}
+	
+	#conts .mainConts .tabBox table thead th {
+		font-size: 9px;
+		line-height: 1.4;
+		padding: 5px;
+	}
+	
+	#conts .mainConts .tabBox table td {
+		font-size: 9px;
+		line-height: 1.4;
+		padding: 7px 5px;
+	}
+	
+	#conts .mainConts .tabBox table td a {
+		color: #4e4e4e;
+		text-decoration: none;
+	}
+	
+	#conts .mainConts h2 {
+	font-size: 18px;
+	margin-bottom: 30px;
+	text-align: center;
+	}
+}
+
+.pcmode #gNavi .navi01 a img {
+	visibility: hidden;
+}
+
+.pcmode #conts .mainConts .title {
+	font-size: 24px;
+	margin-bottom: 30px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.pcmode #conts .mainConts .title span {
+	display: block;
+	font-size: 25px;
+	padding-top: 8px;
+}
+
+.pcmode #conts .mainConts .tabBox {
+	margin-bottom: 50px;
+}
+
+.pcmode #conts .mainConts .tabBox table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.pcmode #conts .mainConts .tabBox table thead th {
+	border: 1px solid #E1E1E1;
+	background-color: #EEEEEE;
+	font-size: 12px;
+	line-height: 1.6;
+	padding: 7px 5px;
+	text-align: center;
+	vertical-align: middle;
+	word-wrap: break-all;
+}
+
+.pcmode #conts .mainConts .tabBox table td {
+	border: 1px solid #E1E1E1;
+	font-size: 12px;
+	line-height: 1.6;
+	padding: 7px 5px;
+	text-align: center;
+	vertical-align: middle;
+	word-wrap: break-all;
+}
+
+.pcmode #conts .mainConts h2 {
+/* 	background: url(../img/common/h2_bg.gif) no-repeat left 1px; */
+	padding: 5px 0 5px;
+	font-size: 18px;
+	margin-bottom: 30px;
+	border-top: solid 3px #17293f;
+	border-bottom: solid 1px #17293f;
+	text-align: center;
+}
+
+
+.spmode	#conts .mainConts .title {
+	font-size: 16px;
+	margin-bottom: 19px;
+}
+	
+.spmode	#conts .mainConts .title span {
+	font-size: 17px;
+	padding-top: 5px;
+}
+		
+.spmode	#conts .mainConts .tabBox {
+	margin-bottom: 40px;
+}
+	
+.spmode	#conts .mainConts .tabBox table thead th {
+	font-size: 9px;
+	line-height: 1.4;
+	padding: 5px;
+}
+	
+.spmode #conts .mainConts .tabBox table td {
+	font-size: 9px;
+	line-height: 1.4;
+	padding: 7px 5px;
+}
+	
+.spmode #conts .mainConts .tabBox table td a {
+	color: #4e4e4e;
+	text-decoration: none;
+}
+	
+.spmode #conts .mainConts h2 {
+	font-size: 18px;
+	margin-bottom: 30px;
+	border-top: solid 3px #17293f;
+	border-bottom: solid 1px #17293f;
+	text-align: center;
+}
+
+#conts .comBox p .textSpan02{
+	position:relative; display:block;
+}

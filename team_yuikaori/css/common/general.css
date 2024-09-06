@@ -1,0 +1,616 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	書式設定
+------------------------------------------------------------*/
+/* テキストの位置 */
+.taLeft { text-align: left !important; }
+.taCenter { text-align: center !important; }
+.taRight { text-align: right !important; }
+
+/* フォントの大きさ（プラス） */
+.fsP1 { font-size: 1.08em !important; }
+.fsP2 { font-size: 1.16em !important; }
+.fsP3 { font-size: 1.24em !important; }
+.fsP4 { font-size: 1.32em !important; }
+.fsP5 { font-size: 1.4em !important; }
+
+/* フォントの大きさ（マイナス） */
+.fsM1 { font-size: 0.92em !important; }
+.fsM2 { font-size: 0.84em !important; }
+.fsM3 { font-size: 0.76em !important; }
+.fsM4 { font-size: 0.68em !important; }
+.fsM5 { font-size: 0.6em !important; }
+
+/* フォントの太さ */
+.fwNormal { font-weight: normal !important; }
+.fwBold { font-weight: bold !important; }
+
+/*------------------------------------------------------------
+	微調整用クラス（※多用しないこと）
+------------------------------------------------------------*/
+.mt0 { margin-top: 0 !important; }
+.mb0 { margin-bottom: 0 !important; }
+.mb5 { margin-bottom: 5px !important; }
+.mb10 { margin-bottom: 10px !important; }
+.t_center{ text-align:center !important;}
+
+/*------------------------------------------------------------
+	汎用スタイル
+------------------------------------------------------------*/
+	* html .clearfix {
+		zoom: 1;
+	}
+
+	*+html .clearfix {
+		zoom: 1;
+	}
+
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+/*------------------------------------------------------------
+	リンク・インプットをタップ時のクラス
+------------------------------------------------------------*/
+a.tapCtrl, input.tapCtrl,
+.tapCtrl a, .tapCtrl input {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.tap {
+
+}
+
+.pageTop {
+	position: fixed;
+	right: 20px;
+	bottom: 23px;
+	z-index: 1000;
+}
+
+/*------------------------------------------------------------
+	spNews
+------------------------------------------------------------*/
+.spNews {
+	display: none;
+}
+
+/*------------------------------------------------------------
+	comUl
+------------------------------------------------------------*/
+.comUl {
+	display: none;
+}
+
+/*------------------------------------------------------------
+	spOff
+------------------------------------------------------------*/
+.spOff {
+	display: none;
+}
+
+/*------------------------------------------------------------
+	mainConts
+------------------------------------------------------------*/
+#conts .topImg img {
+	display: block;
+	vertical-align: baseline;
+}
+
+#conts .topImg .spImg {
+	display: none;
+}
+
+#conts .btmImg img {
+	display: block;
+	vertical-align: baseline;
+}
+
+#conts .btmImg .spImg {
+	display: none;
+}
+
+#conts .mainConts {
+	background:#FFFFFF;
+	padding: 57px 35px 92px;
+	border:1px solid #ff8e7a;
+}
+
+#conts .mainConts_outer{
+	margin:0px 20px;
+	padding: 3px;
+	border:3px solid #ff8e7a;
+}
+
+#conts{padding:20px 0;}
+.top_conts{padding:0 !important;}
+
+
+
+/*------------------------------------------------------------
+	comBox
+------------------------------------------------------------*/
+#conts .comBox {
+	border: 3px solid #ffccc5;
+	margin: 0 auto 44px;
+	padding: 20px 10px;
+	width: 330px;
+}
+
+#conts .comBox01 {
+	margin-bottom: 0;
+	padding: 24px 10px;
+}
+
+#conts .comBox p {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.6;
+	text-align: center;
+}
+
+#conts .comBox p .textSpan01 {
+	font-size: 12px;
+}
+
+#conts .comBox p .textSpan02 {
+	font-size: 16px;
+}
+
+#cover {
+	position: fixed;
+	z-index: 1000;
+	background: #000;
+	opacity: 0.8;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+@media all and (min-width: 0px) and (max-width: 640px) {
+	.pageTop img {
+		width: 35px;
+	}
+	
+	/*------------------------------------------------------------
+		spNews
+	------------------------------------------------------------*/
+	.spNews {
+		border: 2px solid #ff8e7a;
+		background-color: #fff;
+		margin: 0 10px 10px;
+		padding-bottom: 5px;
+		display: block;
+	} 
+	
+	.spNews .title {
+		margin-bottom: 12px;
+	}
+	
+	.spNews .title img {
+		width: 100%;
+	}
+	
+	.spNews .dlBox {
+		margin-right: 0;
+	}
+	
+	.spNews .dlBox .spScroll {
+		overflow: auto;
+		height: 135px;
+	}
+	
+	.spNews .dlBox dl {
+		font-size: 12px;
+		margin-left: 13px;
+	}
+	
+	.spNews .dlBox dt {
+		float: left;
+	}
+	
+	.spNews .dlBox dd {
+		border-bottom: 1px dotted #B8B8B8;
+		padding: 0 0 3px 2.9em;
+	}
+	
+	.spNews .dlBox dd a {
+		color: #4e4e4e;
+		text-decoration: underline;
+	}
+	
+	/*------------------------------------------------------------
+		comUl
+	------------------------------------------------------------*/
+	.comUl {
+		display: block;
+		margin: 0 10px 7px;
+	}
+	
+	.comUl li {
+		float: left;
+		margin-bottom: 2px;
+		width: 50%;
+	}
+	
+	.comUl li a {
+		display: block;
+		border-right: 2px solid #fffbf2;
+	}
+	
+	.comUl li img {
+		width: 100%;
+	}
+	
+	.comUl li:last-child {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.comUl li:last-child a:hover {
+		border-right: 2px solid #8b9298;
+	}
+	
+		
+	/*------------------------------------------------------------
+		spOff
+	------------------------------------------------------------*/
+	.spOff {
+		margin: 0 10px 10px;
+		display: block;
+	}
+	
+	.spOff img {
+		width: 100%;
+	}
+	
+	/*------------------------------------------------------------
+		mainConts
+	------------------------------------------------------------*/
+	#conts .topImg img {
+		width: 100%;
+	}
+	
+	#conts .topImg .pcImg {
+		display: none;
+	}
+	
+	#conts .topImg .spImg {
+		display: block;
+	}
+	
+	#conts .btmImg img {
+		width: 100%;
+	}
+	
+	#conts .btmImg .pcImg {
+		display: none;
+	}
+	
+	#conts .btmImg .spImg {
+		display: block;
+	}
+	
+	#conts .mainConts {
+		/*background: url(../../img/common/sp_conts_bg.gif) repeat-y left top;
+		background-size: 100% auto;*/
+		padding: 15px 8% 28px; 
+	}
+	
+	/*------------------------------------------------------------
+		comBox
+	------------------------------------------------------------*/
+	#conts .comBox {
+		margin: 0 5px 32px 0;
+		padding: 3px;
+		width: auto;
+	}
+	
+	#conts .comBox p {
+		font-size: 12px;
+		line-height: 1.1;
+		padding: 11px 5px;
+	}
+	
+	#conts .comBox01 {
+		margin-bottom: 0;
+	}
+	
+	#conts .comBox01 p {
+		padding: 17px 5px;
+	}
+	
+	#conts .comBox p .textSpan01 {
+		font-size: 8px;
+	}
+	
+	#conts .comBox p .textSpan02 {
+		font-size: 9px;
+	}
+}
+
+.pcmode .pageTop {
+	position: fixed;
+	right: 20px;
+	bottom: 23px;
+	z-index: 1000;
+}
+
+/*------------------------------------------------------------
+	spNews
+------------------------------------------------------------*/
+.pcmode .spNews {
+	display: none;
+}
+
+/*------------------------------------------------------------
+	comUl
+------------------------------------------------------------*/
+.pcmode .comUl {
+	display: none;
+}
+
+/*------------------------------------------------------------
+	spOff
+------------------------------------------------------------*/
+.pcmode .spOff {
+	display: none;
+}
+
+/*------------------------------------------------------------
+	mainConts
+------------------------------------------------------------*/
+.pcmode #conts .topImg img {
+	display: block;
+	vertical-align: baseline;
+}
+
+.pcmode #conts .topImg .spImg {
+	display: none;
+}
+
+.pcmode #conts .btmImg img {
+	display: block;
+	vertical-align: baseline;
+}
+
+.pcmode #conts .btmImg .spImg {
+	display: none;
+}
+
+.pcmode #conts .mainConts {
+	/*background: url(../../img/common/conts_bg.gif) repeat-y left top;*/
+	padding: 60px 60px 95px;
+}
+
+/*------------------------------------------------------------
+	comBox
+------------------------------------------------------------*/
+.pcmode #conts .comBox {
+	border: 3px solid #E1E1E1;
+	margin: 0 0 44px 125px;
+	padding: 12px 10px;
+	width: 330px;
+}
+
+.pcmode #conts .comBox01 {
+	margin-bottom: 0;
+	padding: 24px 10px;
+}
+
+.pcmode #conts .comBox p {
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.pcmode #conts .comBox p .textSpan01 {
+	font-size: 10px;
+}
+
+.pcmode #conts .comBox p .textSpan02 {
+	font-size: 14px;
+}
+
+.pcmode #cover {
+	position: fixed;
+	z-index: 1000;
+	background: #000;
+	opacity: 0.8;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}		
+	
+.spmode .pageTop img {
+	width: 35px;
+}
+
+/*------------------------------------------------------------
+	spNews
+------------------------------------------------------------*/
+.spmode .spNews {
+	border: 2px solid #4F4F4F;
+	background-color: #fff;
+	clear: both;
+	margin: 0 10px 10px;
+	padding-bottom: 5px;
+	display: block;
+} 
+	
+.spmode .spNews .title {
+	margin-bottom: 12px;
+}
+	
+.spmode .spNews .title img {
+	width: 100%;
+}
+	
+.spmode .spNews .dlBox {
+	margin-right: 0;
+}
+	
+.spmode .spNews .dlBox .spScroll {
+	overflow: auto;
+	height: 135px;
+}
+	
+.spmode .spNews .dlBox dl {
+	font-size: 12px;
+	margin-left: 13px;
+}
+	
+.spmode .spNews .dlBox dt {
+	float: left;
+}
+	
+.spmode .spNews .dlBox dd {
+	border-bottom: 1px dotted #B8B8B8;
+	padding: 0 0 3px 2.9em;
+}
+	
+.spmode .spNews .dlBox dd a {
+	color: #4e4e4e;
+	text-decoration: underline;
+}
+	
+/*------------------------------------------------------------
+	comUl
+------------------------------------------------------------*/
+.spmode .comUl {
+	clear: both;
+	display: block;
+	margin: 0 10px 7px;
+}
+	
+.spmode .comUl li {
+	float: left;
+	margin-bottom: 2px;
+	width: 50%;
+}
+	
+.spmode .comUl li a {
+	display: block;
+	border-right: 2px solid #fffbf2;
+}
+	
+.spmode .comUl li:nth-child(2n) a:hover {
+	border-right: 2px solid #8b9298;
+}
+	
+.spmode .comUl li img {
+	width: 100%;
+}
+			
+.spmode .comUl li:nth-child(2n) {
+	float: right;
+}
+	
+.spmode .comUl li:nth-child(2n) a {
+	border-right: 2px solid #8b9298;
+}
+	
+.spmode .comUl li:last-child {
+	width: 100%;
+	text-align: center;
+}
+
+.spmode .comUl li:last-child a {
+	border-right: 2px solid #8b9298;
+}
+
+.spmode .comUl li:last-child a:hover {
+	border-right: 2px solid #8b9298;
+}
+
+.spmode .comUl .on a {
+	border-right: 2px solid #8b9298 !important;
+}
+	
+/*------------------------------------------------------------
+	spOff
+------------------------------------------------------------*/
+.spmode .spOff {
+	margin: 0 10px 10px;
+	display: block;
+}
+	
+.spmode .spOff img {
+	width: 100%;
+}
+	
+/*------------------------------------------------------------
+	mainConts
+------------------------------------------------------------*/
+.spmode #conts .topImg img {
+	width: 100%;
+}
+	
+.spmode #conts .topImg .pcImg {
+	display: none;
+}
+	
+.spmode #conts .topImg .spImg {
+	display: block;
+}
+	
+.spmode #conts .btmImg img {
+	width: 100%;
+}
+	
+.spmode #conts .btmImg .pcImg {
+	display: none;
+}
+	
+.spmode #conts .btmImg .spImg {
+	display: block;
+}
+	
+.spmode #conts .mainConts {
+	/*background: url(../../img/common/sp_conts_bg.gif) repeat-y left top;
+	background-size: 100% auto;*/
+	padding: 15px 8% 28px; 
+}
+	
+/*------------------------------------------------------------
+	comBox
+------------------------------------------------------------*/
+.spmode #conts .comBox {
+	border: 1px solid #E1E1E1;
+	margin: 0 5px 32px 0;
+	padding: 3px;
+	width: auto;
+}
+	
+.spmode #conts .comBox p {
+	border: 1px solid #E1E1E1;
+	font-size: 12px;
+	line-height: 1.1;
+	padding: 11px 5px;
+}
+	
+.spmode #conts .comBox01 {
+	margin-bottom: 0;
+}
+	
+.spmode #conts .comBox01 p {
+	padding: 17px 5px;
+}
+	
+.spmode #conts .comBox p .textSpan01 {
+	font-size: 8px;
+}
+	
+.spmode #conts .comBox p .textSpan02 {
+	font-size: 9px;
+}
