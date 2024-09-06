@@ -1,0 +1,497 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table, tr, td {
+	font-size: 100%;
+	font: inherit;
+	/*border-collapse: collapse;
+	border-spacing: 0;*/
+}
+
+body{ margin: 0; position: relative; color: #4d4d4d;
+	font-family: "メイリオ", Meiryo, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a{ text-decoration: none;}
+a:hover{ text-decoration: underline;}
+
+/* 水平線 */
+hr{
+	height: 1px;
+	width: 750px;
+	margin: 20px auto;;
+	padding: 0;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: dotted 1px #dbc395;
+}
+
+#container{
+	display: block;
+	position: relative;
+	min-width: 1200px;
+	overflow: hidden;
+	margin: 0;
+}
+
+h1{
+	display: block;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 690px;
+	background: url(../img/main_bg.png);
+	background-position: center top;
+	text-align: center;
+}
+
+.inner{
+	display: block;
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+#infomation_area{
+	display: block;
+	position: relative;
+	background: url(../img/info_bg.png);
+	width: 100%;
+	height: 740px;
+	text-align: center;
+	padding: 70px 0 0;
+}
+
+.info_inner{
+	margin: 40px 0 0;
+}
+
+.info_inner div{
+	text-align: center;
+	margin-top: 5px;
+	
+	font-size: 12px;
+	line-height: 1.5em;
+	
+	height: 390px;
+	
+	background: url(../img/info_bg2.png);
+	background-position: center bottom;
+}
+.info_inner div img{
+	margin: 5px 0;
+}
+
+#contents{
+	width: 100%;
+	margin: -10px auto 0;
+	
+	background: url(../img/bg2.jpg);
+	background-position: center top;
+}
+
+
+#lineup_area h2{
+	text-align: center;
+	background: none;
+	background-position: center bottom;
+	position: relative;
+}
+
+#lineup_area{
+	padding-bottom: 40px;
+	width: 1200px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+#info_area div{
+	text-align: center;
+	margin-top: 30px;
+	
+	font-size: 12px;
+	line-height: 1.5em;
+}
+#info_area div img{
+	margin: 10px 0;
+}
+
+
+#lineup_item{
+	position: relative;
+	margin: 0 120px 30px;;
+	overflow: hidden;
+}
+
+#lineup_item img{
+	float: left;
+}
+
+p.text { text-align: center;}
+p.text a{ font-size: 14px; color: #1b1464; font-weight: bold; text-decoration: underline;}
+p.text a:hover{ color: #4d4784}
+
+
+
+#mask{
+	display: block;
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	
+	top: 0;
+	left: 0;
+}
+#footer{
+	background: #e0e4e9;
+	min-width: 1200px
+}
+#footer div.inner{
+	position: relative;;
+	width: 1000px;
+	margin: 0 auto;
+}
+#footer #copyright{
+	padding: 10px 0;
+	font-size: 10px;
+	color: #808080;
+	text-align: center;
+}
+
+.tweet_btn{
+	position: absolute;
+	top: 5px;
+	right: 115px;
+}
+.like_btn{
+	position: absolute;
+	top: 5px;
+	right: 40px;
+}
+/* ===== #pagetop ===== */
+#pagetop{
+	display: none;
+}
+
+#pagetop a{
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: fixed;
+	bottom: 35px;
+	left: 50%;
+	margin-left: 500px;
+	background: url(../img/btn_top.png) no-repeat;
+	text-indent: -9999px;
+	
+	z-index: 9999;
+}
+#pagetop a:hover{
+	background-position: 0 -60px;;
+}
+
+#btnPC,
+#btnSP{
+	display: none;
+}
+
+#btnSP{
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background: #4d4784;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.br-sp { display:none; }
+.sp{ display: none;}
+.pc{ display: inline;}
+
+/*---------------------------
+SP ページレイアウト
+---------------------------*/
+
+@media screen and (max-width: 640px) {
+	.br-sp { display:block; }
+	.sp{ display: block;}
+	.pc{ display: none;}
+	
+	#container{
+		width: 100%;
+		min-width: inherit;
+	}
+	h1{
+		left: 0;
+		width: 100%;
+		height: auto;
+		background: none;
+		text-indent: 0;
+	}
+	h1 img{
+		width: 100%;
+	}
+	
+	#infomation_area{
+		padding: 10% 0 0;
+		height: auto;
+		background: url(../img/sp/info_bg.png) no-repeat;
+		background-size: cover;
+		
+		box-shadow:rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
+		-webkit-box-shadow:rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
+		-moz-box-shadow:rgba(0, 0, 0, 0.2) 0px 10px 5px 0px;
+	}
+	.inner,
+	.info_title{
+		width: 100%;
+	}
+	
+	.inner .date{
+		width: 80%;
+	}
+	
+	.info_inner{
+		padding: 0 5% 0;
+		margin: 7% 0 0;
+	}
+	.info_inner div{
+		font-size: 14px;
+		height: auto;
+		width: 95%;
+		line-height: 1.8em;
+		margin: 5% auto 0;
+		padding-bottom: 10%;
+		background: none;
+/*
+		background: url(../img/sp/info_bg2.png) no-repeat;
+		background-position: center bottom;
+		background-size: contain;
+*/
+	}
+	
+	#contents{
+		margin: 0;
+		background: url(../img/sp/bg2.png);
+		background-position: center top;
+	}
+	
+	#lineup_area{
+		width: 100%;
+	}
+	
+	#lineup_area h2 img{
+		width: 100%;
+	}
+	#lineup_item{
+		margin: 0 auto 20px;
+		width: 95%;
+	}
+	#lineup_item img{
+		width: 100%;
+		float: none;
+	}
+	
+	#pagetop a{
+		margin-left: 30%;
+	}
+	
+	#footer{
+		min-width: inherit;
+	}
+	
+	#footer div.inner{
+	position: relative;;
+	width: 100%;
+	margin: 0 auto;
+	}
+	
+	.footer_sns{
+		position: relative;
+		width: 200px;
+		margin:  0 auto;
+		padding: 15px;
+	}
+	.tweet_btn,
+	.like_btn{
+		top: 10px;
+	}
+	
+	#btnPC{
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		background: #4d4784;
+		padding: 10px 0;
+		margin: 0;
+	}
+	
+/*
+	#contents{
+		width: 100%;
+		background: rgba(239,244,255,0.7);
+	}
+*/
+/*
+	
+	h1{
+		left: 0;
+		width: 100%;
+		height: auto;
+		background: none;
+		text-indent: 0;
+	}
+	h1 img{
+		width: 100%;
+	}
+	
+	h2{
+		background: url(../img/sp/line.png) no-repeat;
+		background-size: contain;
+		background-position: center bottom;
+		height: 55px;
+	}
+	
+	
+	.inner_box{
+		
+	}
+	
+	#schedule_area,
+	#info_area{
+		width: 90%;
+		padding:  40px 0;
+	}
+	
+	#schedule_area dl{
+		width: 90%;
+		text-align: center;
+	}
+	#schedule_area dl dt,
+	#schedule_area dl dd{
+		float: none;
+		width: 100%;
+	}
+	
+	#schedule_area dl dt{
+		padding: 30px 0 0;
+	}
+	#schedule_area dl dd{
+		padding: 5px 0 30px;
+		line-height: 1.5em;
+	}
+	
+	#fl01,
+	#fl02,
+	#fl03,
+	#fl04{
+		display: none;
+	}
+	
+	.line{
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	#info_area div{
+		width: 90%;;
+		margin: 40px auto 0;
+		font-size: 14px;
+	}
+	
+	#lineup_area h2{
+		left: 0px;
+		height: inherit;
+		margin-top: 30px;
+		width: 100%;
+	}
+	#lineup_area h2 img{
+		width: 100%;
+	}
+	#lineup_item{
+		margin: 0 auto 20px;
+		width: 95%;
+	}
+	#lineup_item img{
+		width: 100%;
+		float: none;
+	}
+	
+	#footer div.inner{
+	position: relative;;
+	width: 100%;
+	margin: 0 auto;
+	}
+	
+	.footer_sns{
+		position: relative;
+		width: 200px;
+		margin:  0 auto;
+		padding: 15px;
+	}
+	.tweet_btn,
+	.like_btn{
+		top: 10px;
+	}
+	
+	#pagetop a{
+		margin-left: 30%;
+	}
+	
+	#btnPC{
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		background: #4d4784;
+		padding: 10px 0;
+		margin: 0;
+	}
+	
+	.br-sp { display:block; }
+	.sp{ display: block;}
+	.pc{ display: none;}
+*/
+}

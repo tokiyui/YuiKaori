@@ -1,0 +1,806 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table, tr, td {
+	font-size: 100%;
+	font: inherit;
+	line-height: 1;
+	/*border-collapse: collapse;
+	border-spacing: 0;*/
+}
+
+body { 
+	margin: 0;
+	padding: 0;
+	position: relative; 
+	color: #000;
+	font-family: "メイリオ", Meiryo, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a{ text-decoration: none;}
+a:hover{ text-decoration: underline;}
+
+/* 水平線 */
+hr{
+	height: 1px;
+	width: 750px;
+	margin: 20px auto;
+	padding: 0;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: dotted 1px #dbc395;
+}
+
+#menu_btn {
+	display: none;
+}
+
+#nav {
+	display: block;
+	width: 100%;
+	height: 70px;
+	background: rgba(51,51,51,0.85);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#nav ul {
+	width: 1020px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#nav ul li {
+	display: block;
+	float: left;
+	width: 25%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#nav ul li a {
+	display: block;
+	height: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	background-position: center center;
+	background-repeat: no-repeat; 
+	overflow: hidden;
+	
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+	transition: 0.3s linear;
+}
+
+#nav ul li a:hover {
+	background-color: #bdab5a;
+}
+
+#nav ul li#menu01 a {
+	background-image: url(../img/menu01.png);
+}
+
+#nav ul li#menu02 a {
+	background-image: url(../img/menu02.png);
+}
+
+#nav ul li#menu03 a {
+	background-image: url(../img/menu03.png);
+}
+
+#nav ul li#menu04 a {
+	background-image: url(../img/menu04.png);
+}
+
+
+#container{
+	display: block;
+	position: relative;
+	min-width: 1000px;
+	overflow: hidden;
+	margin: 0;
+	background: #121737 url(../img/bg_pattern.png);
+}
+
+#frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 202px;
+	z-index: 1;
+	background: url(../img/frame.png) repeat-x top;
+}
+
+#contents {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 64px 0 120px;
+	background: #121737;
+	position: relative;
+}
+
+#header {
+	display: block;
+	position: relative;
+	top: 0;
+	width: 100%;
+	min-width: 1020px;
+	height: 600px;
+	background: #121737 url(../img/main.png) center top no-repeat;
+	text-indent: -9999px;
+	position: relative;
+}
+
+#header h1 {
+	width: 634px;
+	height: 312px;
+	background: url(../img/h1.png) no-repeat center top; 
+	text-indent: 100%;
+	overflow:  hidden;
+	white-space: nowrap;
+	position: absolute;
+	bottom: -48px;
+	left: 50%;
+	margin-left: -140px;
+	z-index: 10;
+}
+
+#lineup_area h2 {
+	width: 100%;
+	height: 238px;
+	position: relative;
+	z-index: 1;
+	margin: 8px 0px 8px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(../img/lineup.png);
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.section {
+	position: relative;
+	width: 924px;
+	margin: 120px auto 40px;
+	padding: 136px 96px 80px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: center top;
+	box-sizing: border-box;
+}
+
+.section h2 {
+	width: 100%;
+	height: 182px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	top: -78px;
+	left: 0;
+}
+
+.section p {
+	text-align: center;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.section ul li {
+	text-align: center;
+	font-size: 15px;
+	line-height: 24px;
+	padding-bottom: 32px;
+	position: relative;
+}
+
+.section ul li:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: url(../img/icon_star.png) no-repeat center center;
+}
+
+.section ul li:last-child {
+	padding-bottom: 0px;
+}
+
+.section ul li:last-child:after {
+	content: none;
+	display: none;
+}
+
+#schedule_area {
+	background-image: url(../img/bg_schedule.png);
+	height: 408px;
+}
+
+#schedule_area h2 {
+	background-image: url(../img/h2_schedule.png);
+}
+
+#schedule_area dl {
+	font-size: 18px;
+	line-height: 1;
+	clear: left;
+}
+
+#schedule_area dl dt {
+	width: 12em;
+	float: left;
+	margin-bottom: 32px;
+}
+
+#schedule_area dl dd {
+	font-size: 19px;
+	float: left;
+	margin-bottom: 32px;
+}
+
+#schedule_area dl dd .time {
+	width: 4em;
+	float: left;
+}
+
+#schedule_area dl dd .place {
+	float: left;
+}
+
+#info_area {
+	background-image: url(../img/bg_information.png);
+	height: 757px;
+}
+
+#info_area h2 {
+	background-image: url(../img/h2_information.png);
+}
+
+#credit_intro {
+	background-image: url(../img/bg_credit1.png);
+	height: 295px;
+}
+
+#credit_intro h2,
+#credit_area h2 {
+	background-image: url(../img/h2_credit.png);
+}
+
+#credit_intro p {
+	margin-bottom: 32px;
+}
+
+#credit_intro a {
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+
+#credit_area {
+	background-image: url(../img/bg_credit2.png);
+	height: 884px;
+}
+
+#credit_area .credit_icons {
+	padding-top: 8px;
+}
+
+#size_area {
+	background-image: url(../img/bg_size.png);
+	height: 576px;
+}
+
+#size_area h2 {
+	background-image: url(../img/h2_size.png);
+}
+
+#size_area table {
+	width: 720px;
+	margin: 0 auto 20px;
+	text-align: center;
+	border-top: 2px solid #d9cbb1;
+	border-left: 2px solid #d9cbb1;
+	background: #FFF;
+}
+
+#size_area table th,
+#size_area table td {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1;
+	border-right: 2px solid #d9cbb1;
+	border-bottom: 2px solid #d9cbb1;
+	padding: 1.5em 0px;
+	
+}
+
+#size_area table thead th {
+	background: #917943;
+	color: #FFF;
+}
+
+#size_area table tbody th {
+	background: #f7efd9;
+}
+
+#size_area .size_caption {
+	font-size: 12px;
+	font-weight: lighter;
+	text-align: right;
+}
+
+/* lineup */
+
+#lineup_item {
+	position: relative;
+	overflow: hidden;
+	padding-left: 24px;
+}
+
+#lineup_item img {
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+#footer{
+	background: #e0e4e9;
+}
+#footer div.inner{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+#footer #copyright{
+	padding: 10px 0;
+	font-size: 10px;
+	color: #808080;
+	text-align: center;
+}
+
+.tweet_btn{
+	position: absolute;
+	top: 5px;
+	right: 115px;
+}
+.like_btn{
+	position: absolute;
+	top: 5px;
+	right: 40px;
+}
+/* ===== #pagetop ===== */
+#pagetop{
+	display: none;
+}
+
+#pagetop a {
+	width: 82px;
+	height: 84px;
+	display: block;
+	position: fixed;
+	bottom: 35px;
+	left: 50%;
+	margin-left: 390px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url(../img/btn_top.png);
+	text-indent: -9999px;
+	
+	z-index: 9999;
+}
+#pagetop a:hover{
+	background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/btn_top_over.png);
+}
+
+#btnPC,
+#btnSP{
+	display: none;
+}
+
+#btnSP{
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background: #4d4784;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.sp{ display: none;}
+
+/*---------------------------
+SP ページレイアウト
+---------------------------*/
+@media screen and (max-width: 736px) {
+	body {
+		background-size: 500px auto;
+	}
+	
+	#header {
+		min-width: 0;
+		background-image: url(../img/sp/main.png);
+		background-size: 100% auto;
+		height: 95.3125vw;
+	}
+	
+	h1{
+		display: none;
+	}
+	
+	h1 img {
+		width: 100%;
+	}
+	
+	#nav {
+		width: 100%;
+		height: auto;
+		padding: 7vw;
+		box-sizing: border-box;
+		background: none;
+		background-color: rgba(0,0,0,0.8);
+		position: fixed;
+		top: -85vw;
+		z-index: 999;	
+		overflow: hidden;
+		-webkit-transition: 0.3s linear;
+		-moz-transition: 0.3s linear;
+		-o-transition: 0.3s linear;
+		transition: 0.3s linear;
+	}
+	
+	#nav.visible {
+		top: 0;
+	}
+	
+	#menu_btn {
+		display: block;
+		width: 14.0625vw;
+		height: 14.0625vw;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #000;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100%;
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/btn_open.png);
+		z-index: 9999;
+	}
+	
+	#menu_btn.open {
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/btn_close.png);
+	}
+	
+	#nav ul {
+		display: block;
+		width: 100%;
+		padding-top: 15.625vw;
+		background: url(../img/sp/logo.png) no-repeat top left;
+		background-size: auto 11.25vw;
+	}
+	
+	#nav ul li {
+		border-bottom: 1px solid #FFF;
+	}
+	
+	#nav ul li#menu01 {
+		border-top: 1px solid #FFF;
+	}
+	
+	#nav ul li#menu01,
+	#nav ul li#menu02,
+	#nav ul li#menu03,
+	#nav ul li#menu04 {
+		width: 100%;
+		height: auto;
+		float: none;
+		box-sizing: border-box;
+	}
+	
+	#nav ul li a {
+		display: block;
+		width: 100%;
+		height: 13.4375vw;
+		background-position: left center;
+		background-size: auto 100%;
+		background-color: inherit;
+	}
+	
+	#nav ul li a:hover {
+		background-color: inherit;
+	}
+	
+	#nav ul li#menu01 a {
+		background-image: url(../img/sp/menu01.png);
+	}
+	
+	#nav ul li#menu02 a {
+		background-image: url(../img/sp/menu02.png);
+	}
+	
+	#nav ul li#menu03 a {
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/menu03.png);
+	}
+	
+	#nav ul li#menu04 a {
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/menu04.png);
+	}
+	
+	#container{
+		width: 100%;
+		min-width: 0;
+	}
+	
+	#contents{
+		width: 100%;
+		padding-top: 11.25vw;
+		padding-bottom: 6.25vw;
+		background: none;
+	}
+	
+	#contents:before,
+	#contents:after {
+		content: none;
+		display: none;
+	}
+	
+	#frame {
+		height: 20vw;
+		background-size: auto 100%;
+	}
+	
+	.section {
+		width: 88.125%;
+		background-size: 100% auto;
+		padding: 22vw 7.5vw 12.5vw;
+		margin: 18.125vw auto 5vw;
+		position: relative;
+	}
+	
+	.section ul li {
+		font-size: 3.5vw;
+		line-height: 1.52;
+		padding-bottom: 5.625vw; 
+	}
+	
+	.section ul li:after {
+		width: 100%;
+		height: 7.5vw;
+		margin: 0;
+		background-size: 2.5vw auto;
+	}
+	
+	.section h2 {
+		height: 0;
+		padding-bottom: 28.4375vw;
+		background-size: auto 100%;
+		top: -11.25vw;
+	}
+	
+	#schedule_area {
+		background-image: url(../img/sp/bg_schedule.png);
+		height: 161.5625vw;
+	}
+		
+	#schedule_area dl {
+		width: 100%;
+		float: none;
+		line-height: 1;
+		text-align: center;
+		padding-bottom: 5vw;
+		margin-bottom: 5vw;
+		background: url(../img/sp/line.png) no-repeat center bottom;
+		background-size: 100% auto;
+	}
+	
+	#schedule_area dl:last-child {
+		background: none;
+	}
+	
+	#schedule_area dl dt {
+		width: 100%;
+		float: none;
+		font-size: 4.6875vw;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 3.75vw;
+	}
+	
+	#schedule_area dl dd{
+		clear: both;
+		float: none;
+		margin-bottom: 0;
+	}
+	
+	#schedule_area dl dd .time,
+	#schedule_area dl dd .place {
+		display: block;
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	
+	#schedule_area dl dd .time {
+		font-size: 4.375vw;
+		margin-bottom: 2.5vw;
+	}
+	
+	#schedule_area dl dd .place {
+		font-size: 4.6875vw;
+		line-height: 1.35;
+	}
+	
+	#info_area {
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/bg_information.png);
+		height: 200.625vw;
+	}
+	
+	#credit_intro {
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/bg_credit1.png);
+		height: 69.375vw;
+	}
+	
+	#credit_intro p {
+		font-size: 3.6vw;
+		line-height: 1.52;
+	}
+	
+	#credit_intro a {
+		font-size: 3.6vw;
+		line-height: 1.52;
+	}
+	
+	#lineup_area h2 {
+		left: 0px;
+		margin: 0 0;
+		width: 100%;
+		height: 38.125vw;
+		background-image: url(../img/sp/lineup.png);
+		background-size: 100% auto;
+	}
+	
+	#lineup_item {
+		padding: 0;
+		text-align: center;
+	}
+	
+	#lineup_item img {
+		width: 88.125%;
+		min-width: 282px;
+		margin: 0 auto 1.25vw;
+		float: none;
+	}
+	
+	#credit_area {
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/bg_credit2.png);
+		height: 230.3125vw;
+	}
+	
+	#credit_area .credit_icons img {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#size_area {
+		background-image: url(http://www.yuikaori.info/special/2017/Starlight-Link/img/sp/bg_size.png);
+		height: 94vw;
+	}
+	
+	#size_area table {
+		width: 100%;
+		margin-bottom: 3vw;
+	}
+	
+	#size_area table caption {
+		font-size: 3.4vw;
+		line-height: 1;
+		padding-bottom: 0.5em;
+	}
+	
+	#size_area table th,
+	#size_area table td {
+		font-size: 2.5vw;
+		line-height: 1;
+		padding: 1.3em 0;
+	}
+	
+	#size_area .size_caption {
+		font-size: 12px;
+		font-weight: lighter;
+		text-align: right;
+	}
+	
+	#footer div.inner{
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	}
+	
+	.footer_sns{
+		position: relative;
+		width: 200px;
+		margin:  0 auto;
+		padding: 15px;
+	}
+	.tweet_btn,
+	.like_btn{
+		top: 10px;
+	}
+	
+	#pagetop {
+		display: block;
+		min-height: 84px;
+		position: relative;
+	}
+	
+	#pagetop a {
+		position: absolute;
+		right: 5vw;
+		left: auto;
+		bottom: 0;
+		margin: 0;
+	}
+	
+	#btnPC{
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		background: #4d4784;
+		padding: 10px 0;
+		margin: 0;
+	}
+	
+	.sp{ display: block;}
+	.pc{ display: none;}
+}
