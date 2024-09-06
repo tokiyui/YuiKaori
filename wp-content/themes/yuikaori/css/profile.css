@@ -1,0 +1,166 @@
+#contents h1 img{
+	width:94px;
+	height:20px;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+}
+#contents #photo{
+	width: 1000px;
+	height: 501px;
+	margin: 20px 40px 20px 0;
+}
+
+#contents #profile_yui{ width: 450px; height: 196px; float: left; background: url(../img/profile/profile-yui.gif) no-repeat; padding: 60px 15px 0;}
+#contents #profile_yui dl dt{ height: 25px; width: 70px; clear: both; float: left; margin: 0 0 2px 0;}
+#contents #profile_yui dl dd{ height: 25px; width: 370px; height: 21px; float: left; margin: 0 0 2px 0; padding: 4px 0 0 10px; background: #fff2f8; font-size: 12px; line-height: 1.5em; color: #ff1e7a;}
+#contents #profile_yui dl dd.hobby{ height: 46px; padding: 14px 0 0 10px;}
+#contents #profile_yui dl dd.skill{ height: 36px; padding: 4px 0 0 10px;}
+
+#contents #profile_kaori{ width: 450px; height: 196px; float: right; background: url(../img/profile/profile-kaori.gif) no-repeat; padding: 60px 15px 0;}
+#contents #profile_kaori dl dt{ height: 25px; width: 70px; clear: both; float: left; margin: 0 0 2px 0;}
+#contents #profile_kaori dl dd{ height: 25px; width: 370px; height: 21px; float: left; margin: 0 0 2px 0; padding: 4px 0 0 10px; background: #f2faff; font-size: 12px; line-height: 1.5em; color: #0087d0;}
+#contents #profile_kaori dl dd.hobby{ height: 56px; padding: 4px 0 0 10px;}
+#contents #profile_kaori dl dd.skill{ height: 26px; padding: 14px 0 0 10px;}
+
+#contents #appearance_yui,
+#contents #appearance_kaori{
+	width: 480px;
+	margin: 20px 0;
+}
+#contents #appearance_yui{
+	float: left;
+}
+#contents #appearance_kaori{
+	float: right;
+}
+
+#contents #appearance_yui ul,
+#contents #appearance_kaori ul{
+	width: 480px;
+	height: 28px;
+	margin-top: 7px;
+}
+#contents #appearance_yui ul li,
+#contents #appearance_kaori ul li{
+	height: 41px;
+	width: 92px;
+	padding-top: 13px;
+	margin-right: 5px;
+	float: left;
+}
+#contents #appearance_yui ul li.other,
+#contents #appearance_kaori ul li.other{margin-right: 0;}
+
+#contents #appearance_yui ul li.new{
+	background: url(../img/profile/new-yui.gif) no-repeat;
+	background-position: center top;
+}
+#contents #appearance_kaori ul li.new{
+	background: url(../img/profile/new-kaori.gif) no-repeat;
+	background-position: center top;
+}
+
+#contents #appearance_yui ul li a,
+#contents #appearance_kaori ul li a{
+	display: block;
+	width: 92px;
+	height: 28px;
+	
+	text-indent: -9999px;
+}
+
+#contents #appearance_yui ul li.anime a,
+#contents #appearance_kaori ul li.anime a{ background: url(../img/profile/cat_anime.gif) no-repeat;}
+#contents #appearance_yui ul li.anime a:hover{ background: url(../img/profile/cat_anime_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.anime a:hover{ background: url(../img/profile/cat_anime_kaori.gif) no-repeat;}
+#contents #appearance_yui ul li.anime a.current{ background: url(../img/profile/cat_anime_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.anime a.current{ background: url(../img/profile/cat_anime_kaori.gif) no-repeat;}
+
+#contents #appearance_yui ul li.game a,
+#contents #appearance_kaori ul li.game a{ background: url(../img/profile/cat_game.gif) no-repeat;}
+#contents #appearance_yui ul li.game a:hover{ background: url(../img/profile/cat_game_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.game a:hover{ background: url(../img/profile/cat_game_kaori.gif) no-repeat;}
+#contents #appearance_yui ul li.game a.current{ background: url(../img/profile/cat_game_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.game a.current{ background: url(../img/profile/cat_game_kaori.gif) no-repeat;}
+
+#contents #appearance_yui ul li.radio a,
+#contents #appearance_kaori ul li.radio a{ background: url(../img/profile/cat_radio.gif) no-repeat;}
+#contents #appearance_yui ul li.radio a:hover{ background: url(../img/profile/cat_radio_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.radio a:hover{ background: url(../img/profile/cat_radio_kaori.gif) no-repeat;}
+#contents #appearance_yui ul li.radio a.current{ background: url(../img/profile/cat_radio_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.radio a:current{ background: url(../img/profile/cat_radio_kaori.gif) no-repeat;}
+
+#contents #appearance_yui ul li.regular a,
+#contents #appearance_kaori ul li.regular a{ background: url(../img/profile/cat_regular.gif) no-repeat;}
+#contents #appearance_yui ul li.regular a:hover{ background: url(../img/profile/cat_regular_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.regular a:hover{ background: url(../img/profile/cat_regular_kaori.gif) no-repeat;}
+#contents #appearance_yui ul li.regular a.current{ background: url(../img/profile/cat_regular_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.regular a:current{ background: url(../img/profile/cat_regular_kaori.gif) no-repeat;}
+
+#contents #appearance_yui ul li.other a,
+#contents #appearance_kaori ul li.other a{ background: url(../img/profile/cat_other.gif) no-repeat;}
+#contents #appearance_yui ul li.other a:hover{ background: url(../img/profile/cat_other_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.other a:hover{ background: url(../img/profile/cat_other_kaori.gif) no-repeat;}
+#contents #appearance_yui ul li.other a.current{ background: url(../img/profile/cat_other_yui.gif) no-repeat;}
+#contents #appearance_kaori ul li.other a:current{ background: url(../img/profile/cat_other_kaori.gif) no-repeat;}
+
+#contents #appearance_yui .inner,
+#contents #appearance_kaori .inner{
+	padding: 10px 0;
+	background: url(../img/dot.gif) repeat-x;
+	background-position: left bottom;
+	font-size: 11px;
+	line-height: 18px;
+	color: #3e3a39;
+	
+	clear: both;
+	height: 500px;
+	overflow-y: auto;
+}
+
+#contents #appearance_yui .inner ul,
+#contents #appearance_kaori .inner ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 500px;
+}
+
+#contents #appearance_yui .inner ul li,
+#contents #appearance_kaori .inner ul li{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	
+	list-style-type: square;
+	list-style-position: inside;
+	
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 1.5em;
+	color: #3e3a39;
+}
+
+#contents #appearance_yui .inner ul li span{
+	color: #ff1e7a;
+}
+#contents #appearance_kaori .inner ul li span{
+	color: #0087d0;
+}
+
+#contents #appearance_yui .inner ul#yui_anime,
+#contents #appearance_yui .inner ul#yui_game,
+#contents #appearance_yui .inner ul#yui_radio,
+#contents #appearance_yui .inner ul#yui_regular,
+#contents #appearance_yui .inner ul#yui_works-other,
+#contents #appearance_kaori .inner ul#kaori_anime,
+#contents #appearance_kaori .inner ul#kaori_game,
+#contents #appearance_kaori .inner ul#kaori_radio,
+#contents #appearance_kaori .inner ul#kaori_regular,
+#contents #appearance_kaori .inner ul#kaori_works-other
+{ display: none;}

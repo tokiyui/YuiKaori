@@ -1,0 +1,288 @@
+body{
+	min-width: 1200px;
+}
+
+#container #top_bg{
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 0;
+}
+
+#container #top_bg img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+#container #top_bg #bg_1{
+	display: block;
+}
+
+#header #gnavi{
+	padding: 9px 100px 0 ;
+}
+
+#header #gnavi ul{
+	left: 438px;
+}
+
+#header a.top{
+	width: 210px;
+	height: 80px;
+	display: block;
+}
+#contents{
+	width: 1000px;
+	height: 530px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 100px;
+	display: block;
+}
+
+#contents #right_area{
+	display: table;
+	
+	width: 330px;
+	position: relative;
+	margin-left: 670px;
+}
+
+#contents #right_area #btn_area_container{
+	display: table-cell;
+	vertical-align: middle;
+	height: 182px;
+}
+
+#contents #right_area #btn_area{
+	width: 320px;
+	padding: 0 5px;
+	background: #ced7df;
+}
+
+#contents #right_area #btn_area div{
+	margin-top: 5px;
+}
+#contents #right_area #btn_area div:first-child{
+	margin-top: 0;
+}
+
+#contents #right_area #whatsnew_area{
+	position: absolute;
+	top: 195px;
+	left: 0;
+	
+	display: block;
+	width: 330px;
+	height: 107px;
+	background: url(../img/top/dot.png) no-repeat;
+	background-position: left bottom;
+}
+
+#contents #right_area #whatsnew_area #whatsnew_inner{
+	width: 325px;
+	height: 56px;
+	padding: 9px 0 11px 5px;
+	background: url(../img/top/dot.png) no-repeat;
+	background-position: left top;
+}
+#contents #right_area #whatsnew_area #whatsnew_inner ul{
+	width:325px;
+	height:55px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#contents #right_area #whatsnew_area #whatsnew_inner ul li a,
+#contents #right_area #whatsnew_area #whatsnew_inner ul li{
+	display: table;
+	color: #3e3a39;
+	text-decoration: none;
+	margin: 0 5px 3px 0;
+}
+#contents #right_area #whatsnew_area #whatsnew_inner ul li a:hover{
+	text-decoration: underline;
+}
+#contents #right_area #whatsnew_area #whatsnew_inner ul li a p,
+#contents #right_area #whatsnew_area #whatsnew_inner ul li p{
+	display: table-cell;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 18px;
+}
+#contents #right_area #whatsnew_area #whatsnew_inner ul li a span,
+#contents #right_area #whatsnew_area #whatsnew_inner ul li span{
+	display: table-cell;
+	font-size: 10px;
+	padding-right: 10px;
+	color: #0c355e;
+}
+
+#contents #right_area #blog_area{
+	position: absolute;
+	top: 315px;
+	left: 0px;
+	
+	display: block;
+	width: 330px;
+	height: 141px;
+	background: url(../img/top/dot.png) no-repeat;
+	background-position: left bottom;
+}
+
+#contents #right_area #blog_area #blog_inner{
+	width: 325px;
+	height: 56px;
+	padding: 9px 0 11px 5px;
+	background: url(../img/top/dot.png) no-repeat;
+	background-position: left top;
+}
+#contents #right_area #blog_area #blog_inner ul{
+	width:325px;
+	height:90px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#contents #right_area #blog_area #blog_inner ul li {
+	display: table;
+	width: 311px;
+	margin-bottom: 5px;
+}
+#contents #right_area #blog_area #blog_inner ul li img{
+	display: table-cell;
+	width: 26px;
+	height: 26px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+#contents #right_area #blog_area #blog_inner ul li div{
+	display: table-cell;
+	width: 236px;
+	vertical-align:top;
+}
+#contents #right_area #blog_area #blog_inner ul li div span{
+	display: block;
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+#contents #right_area #blog_area #blog_inner ul li div a{
+	font-size: 11px;
+	text-decoration: none;
+}
+#contents #right_area #blog_area #blog_inner ul li a.yui{
+	color: #ff1e7a;
+}
+#contents #right_area #blog_area #blog_inner ul li a.kaori{
+	color: #0087d0;
+}
+
+#contents #right_area #blog_area #blog_inner ul li img.tag{
+	width: 40px;
+	height: 16px;
+	margin-right: 0;
+}
+
+h2{
+	display: block;
+	width: 330px;
+	height: 27px;
+	margin-bottom: 4px;
+	text-indent: -9999px;
+}
+#contents #right_area #whatsnew_area h2{
+	background: url(../img/top/h2_whatsnew.png) no-repeat;
+}
+#contents #right_area #blog_area h2{
+	background: url(../img/top/h2_blog.png) no-repeat;
+}
+
+#contents #right_area #banner_area{
+	position: absolute;
+	top: 465px;
+	left: 0px;
+	
+	display: block;
+	width: 330px;
+	height: 50px;
+}
+#contents #right_area #banner_area div{
+	float: left;
+	margin-right: 10px;
+}
+#contents #right_area #banner_area div.banner2{
+	margin-right: 0px;
+}
+
+#banner_HeartyParty{
+	display: block;
+	position: absolute;
+	width: 171px;
+	height: 131px;
+	top: 378px;
+	left: 93px;
+}
+
+.bk{width:100%; height:100%; background:#000000; display:none; top:0; left:0; position:fixed; z-index:9998;}
+#youtube_area{
+	display: none;
+	width: 600px;
+	height: 358px;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+	z-index:9999;
+}
+#btn_close{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -60px;
+	right: -60px;
+}
+
+#btn_video_1 a{
+	display: block;
+	position: absolute;
+	width: 190px;
+	height: 190px;
+	top: 352px;
+	left: 210px;
+}
+#btn_video_2 a{
+	display: block;
+	position: absolute;
+	width: 190px;
+	height: 190px;
+	top: 274px;
+	left: 40px;
+}
+
+#third_team_yuikaori{
+	display: block;
+	position: absolute;
+	bottom: 172px;
+	left: 620px;
+}
+
+#third_live_banner{
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 510px;
+}
+#ogurayui_live_banner img{
+/* 	width: 216px; */
+}
+
+#twitter_banner{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 510px;
+}

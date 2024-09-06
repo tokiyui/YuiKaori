@@ -1,0 +1,480 @@
+body{
+	min-width: 1000px;
+	background: #E6EAEF;
+	position: relative;
+	font-family: "メイリオ", Meiryo, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* 水平線 */
+hr{
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: url(../img/bg_dot.gif) repeat-x 0 0;
+}
+
+td,th{
+	border: 1px solid #3e3a39;
+	padding:5px;
+}
+
+.bold{	font-weight: bold;}
+.red{color:#ED1C24;}
+.pink{color:#FF1E7A;}
+.blue{color: #0687D0;}
+.orange{color:#EB6101;}
+
+.pinkBg{
+	background-color: #FF1E7A;
+}
+.blueBg{
+	background-color: #0687D0;
+}
+
+strong{
+	font-weight: bold;
+}
+small{
+	font-size: 10px;
+}
+
+#container{
+	background: #ffffff;
+}
+
+
+#header{
+	display: block;
+	width: 100%;
+	height: 90px;
+	background: url(../img/header/header_line.png) repeat-x;
+}
+
+#header #gnavi{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 9px 0 0;
+}
+
+#header h1{
+	width: 210px;
+	height: 80px;
+	background: url(../img/header/title_s.png) no-repeat;
+	text-indent: -9999px;
+}
+#header a.top_link{
+	display: block;
+	width: 210px;
+	height: 80px;
+}
+#header h1.top{
+	width: 270px;
+	height: 80px;
+	background: url(../img/header/title.png) no-repeat;
+	text-indent: -9999px;
+}
+#header ul{
+	position: absolute;
+	top: 36px;
+	left: 338px;
+	
+	width: 654px;
+	height: 28px;
+}
+#header li a{
+	height: 28px;
+	background: url(../img/header/gnavi.png) no-repeat;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 5px;
+}
+
+#header li a#gnavi_1{ width: 143px; background-position:0 0; }
+#header li a#gnavi_1:hover{ background-position:0 -28px; }
+#header li a#gnavi_2{ width: 91px; background-position:-147px 0; }
+#header li a#gnavi_2:hover{ background-position:-147px -28px; }
+#header li a#gnavi_3{ width: 145px; background-position:-242px 0; }
+#header li a#gnavi_3:hover{ background-position:-242px -28px; }
+#header li a#gnavi_4{ width: 81px; background-position:-390px 0; }
+#header li a#gnavi_4:hover{ background-position:-390px -28px; }
+#header li a#gnavi_5{ width: 74px; background-position:-475px 0; margin-right: 0}
+#header li a#gnavi_5:hover{ background-position:-475px -28px; }
+#header li a#gnavi_6{ width: 100px; background-position:-552px 0; margin-right: 0}
+#header li a#gnavi_6:hover{ background-position:-552px -28px; }
+
+#header li a#gnavi_1_current{width: 143px; background-position:0px -28px; }
+#header li a#gnavi_2_current{width: 91px; background-position:-147px -28px; }
+#header li a#gnavi_3_current{width: 145px; background-position:-242px -28px; }
+#header li a#gnavi_4_current{width: 81px; background-position:-390px -28px; }
+#header li a#gnavi_5_current{width: 72px; background-position:-475px -28px; }
+
+#header #gnavi ul li.btn_blog:hover ul{
+	display: block;
+}
+
+#header #gnavi ul li ul{
+	display: none;
+	
+	width: 90px;
+	height: 78px;
+	
+	position: absolute;
+	top: 28px;
+	left: 480px;
+	background: url(../img/header/gnavi_blog_over.png) no-repeat;
+	z-index: 999;
+	padding: 12px 5px 5px;
+}
+
+#header #gnavi ul li ul li a{
+	text-indent: 0;
+}
+
+#header #gnavi ul li ul li{
+	display: block;
+	width: 90px;
+	height: 34px;
+	margin-bottom: 5px;
+}
+
+/* ===== #contents ===== */
+#contents{
+	width:1000px;
+	margin:auto;
+	position: relative;
+}
+#contents.notfound{
+	height: 500px;
+	position: relative;
+}
+#contents h1{
+	width:100%;
+	height:40px;
+	display: block;
+	background: url('../img/bg_dot.gif');
+	position: relative;
+}
+
+/* ===== #main ===== */
+#main{
+	width:800px;
+	min-height: 400px;
+	float: right;
+	margin:20px auto auto;
+}
+#main h2{
+	margin:auto auto 20px;
+}
+
+#contents #main h2{
+	background: url('../img/bg_diagonal.gif');
+	padding:7px 10px 3px;
+	
+	font-size: 14px;
+	font-weight: bold;
+	color: #0c355e;
+}
+
+/* ===== #sidebar ===== */
+#sidebar{
+	width:160px;
+	position: absolute;
+	top:60px;
+	left:0;
+	margin:auto auto;
+	background: url(../img/sidebar/sidebar_bg_top.png) no-repeat;
+}
+#sidebar div{
+	padding-bottom: 8px;
+	background: url(../img/sidebar/sidebar_bg_bottom.png) no-repeat;
+	background-position: left bottom;
+}
+
+#sidebar ul{
+	margin: 10px 0 0;
+	padding: 0 10px 2px;
+	background: url(../img/sidebar/sidebar_bg_inner.png) repeat-y;
+}
+
+#sidebar ul li a{
+	display: block;
+	width: 120px;
+	height: 16px;
+	margin-bottom: 2px;
+	padding: 6px 0 0 20px;
+	background: url(../img/sidebar/btn_cat_bk.png) no-repeat;
+	
+	font-size: 12px;
+	font-weight: normal;
+	color: #3e3a39;
+	text-decoration: none;
+}
+#sidebar ul li a:hover,
+#sidebar ul li.current a{
+	background: url(../img/sidebar/btn_cat_bk_on.png) no-repeat;
+	
+	font-size: 12px;
+	font-weight: bold;
+	color: #0c355e;
+	text-decoration: none;
+}
+
+/* ===== #pagetop ===== */
+#pagetop{
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: fixed;
+	/* margin-left: 1010px; */
+	bottom: 10px;
+}
+
+/* ===== #footer ===== */
+#footer{
+	width:100%;
+	height: 80px;
+	background: #E6EAEF;
+	clear: both;
+}
+
+#footer #footer_inner{
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+#footer #footer_inner #copyright{
+	font-size: 11px;
+	font-weight: normal;
+	color: #0c355e;
+	float: left;
+}
+
+.tweet_btn,
+.like_btn{
+	float: left;
+	margin:auto auto auto 10px;
+}
+#footer .footer_sns{
+	float: right;
+}
+
+
+/* ===== スクロールバー ===== */
+.mCustomScrollbar{ -ms-touch-action: none; touch-action: none; /* MSPointer events - direct all pointer events to js */ }
+.mCustomScrollbar.mCS_no_scrollbar{ -ms-touch-action: auto; touch-action: auto; }
+	
+.mCustomScrollBox{ /* contains plugin's markup */
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	max-width: 100%;
+	outline: none;
+	direction: ltr;
+}
+
+.mCSB_container{ /* contains the original content */
+	overflow: hidden;
+	width: auto;
+	height: auto;
+}
+	
+
+.mCSB_inside > .mCSB_container{ margin-right: 4px; }
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-right: 0; } /* non-visible scrollbar */
+	
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container{ /* RTL direction/left-side scrollbar */
+	margin-right: 0;
+	margin-left: 10px;
+}
+	
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden{ margin-left: 0; } /* RTL direction/left-side scrollbar */
+
+.mCSB_scrollTools{ /* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+	position: absolute;
+	width: 4px;
+	height: auto;
+	left: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.mCSB_outside + .mCSB_scrollTools{ right: -26px; } /* scrollbar position: outside */
+	
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools, 
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ /* RTL direction/left-side scrollbar */
+	right: auto;
+	left: 0;
+}
+	
+.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ left: -26px; } /* RTL direction/left-side scrollbar (scrollbar position: outside) */
+
+.mCSB_scrollTools .mCSB_draggerContainer{ /* contains the draggable element and dragger rail markup */
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0; 
+	height: auto;
+}
+
+.mCSB_scrollTools a + .mCSB_draggerContainer{ margin: 20px 0; }
+
+.mCSB_scrollTools .mCSB_draggerRail{
+	width: 2px;
+	height: 100%;
+	margin: 0 auto;
+	-webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px;
+}
+
+.mCSB_scrollTools .mCSB_dragger{ /* the draggable element */
+	cursor: pointer;
+	width: 100%;
+	height: 30px; /* minimum dragger height */
+	z-index: 1;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ /* the dragger element */
+	position: relative;
+	width: 4px;
+	height: 100%;
+	margin: 0 auto;
+	-webkit-border-radius: 16px; -moz-border-radius: 16px; border-radius: 16px;
+	text-align: center;
+}
+	
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar, 
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar{ width: 12px; /* auto-expanded scrollbar */ }
+	
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail, 
+.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail{ width: 8px; /* auto-expanded scrollbar */ }
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown{
+	display: block;
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown{ bottom: 0; }
+	
+
+#mCSB_1_scrollbar_vertical{width: 4px;}
+.mCSB_draggerContainer{width: 4px;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background: #0c355e;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover{background: #0c355e;}
+
+.mCSB_scrollTools .mCSB_dragger{
+	background: #0c355e;
+}
+
+.mCustomScrollBox>.mCSB_scrollTools{
+	opacity:1;
+}
+.mCustomScrollBox:hover>.mCSB_scrollTools{
+	opacity:1;
+}
+
+.mCSB_draggerRail{background: #e5e0e2}
+
+
+
+/*---- 視聴 ----*/
+a.jstream_btn{
+	width:60px;
+	height:16px;
+	display: inline-block;
+	margin-left: 10px;
+	background: url(../img/discography/trial.gif) no-repeat;
+	background-position: 0 0;
+	text-indent: -9999px;
+}
+a.jstream_btn.jstream_btn_trial{
+	background: url(../img/discography/trial2.gif) no-repeat;
+}
+a.jstream_btn.jstream_btn_mv{
+	background: url(../img/discography/trial3.gif) no-repeat;
+}
+a.jstream_btn.jstream_btn_all{
+	background: url(../img/discography/trial4.gif) no-repeat;
+}
+a.jstream_btn:hover{
+	background-position: 0 -16px;
+}
+
+
+#modal{
+/* 	display:none; */
+	width:100%;
+	height:120%;
+	position: fixed;
+	top:0;
+	left:0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter: "alpha(opacity=0)";
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}
+#modal_bg{
+	background:url(../img/bk60.png);
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#modal .jstream_modal{
+	position: absolute;
+/* 	display:none; */
+	top:auto;
+	left:0;
+	right:0;
+	bottom:auto;
+	margin:auto;
+	width:640px;
+	height:360px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter: "alpha(opacity=0)";
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+}
+
+
+/*----- Not found -----*/
+.notfound{
+	width:221px;
+	height:220px;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+}
+
+
+/*----- SPボタン -----*/
+#btn-sp{
+	text-align: center;
+	padding:20px 0;
+}
+#btn-sp a{
+	background: url(../img/tri.png) no-repeat;
+	font-size: 14px;
+	font-weight: normal;
+	color: #0c355e;
+	padding-left: 17px;
+	text-decoration: none;
+	font-weight: bold;
+}

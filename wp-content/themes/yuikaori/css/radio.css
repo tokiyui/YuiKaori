@@ -1,0 +1,117 @@
+#contents h1 img{
+	width:78px;
+	height:20px;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+}
+#contents #photo{
+	width: 480px;
+	height: 321px;
+	margin: 20px 40px 20px 0;
+	padding: 0 0 20px 0;
+	background: url(../img/radio/dot.png) no-repeat;
+	background-position: left bottom;
+	float: left;
+}
+#contents #headline{
+	width: 480px;
+	height: 321px;
+	margin: 20px 0;
+	padding: 0 0 20px 0;
+	background: url(../img/radio/dot.png) no-repeat;
+	background-position: left bottom;
+	float: left;
+	position: relative;
+}
+
+#contents #headline p{
+	margin-top: 20px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #3e3a39;
+}
+
+#contents #headline a{
+	position: absolute;
+	bottom: 20px;
+	width: 480px;
+	height: 60px;
+}
+
+#contents #onair{
+	width: 365px;
+	height: 75px;
+	margin: 0 40px 20px 0;
+	padding: 5px 0 0 115px;
+	background: url(../img/radio/onair.png) no-repeat;
+	float: left;
+}
+
+#contents #onair p,#contents #address p{
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+}
+#contents #onair p span,#contents #address p span{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#contents #address{
+	width: 365px;
+	height: 90px;
+	margin: 0 0 20px 0;
+	padding: 0 0 0 115px;
+	background: url(../img/radio/address.png) no-repeat;
+	float: left;
+}
+#contents #address p{line-height: 26px}
+#contents #address p a{color: #0c355e}
+
+#contents #corner_intro{
+	width: 1000px;
+/* 	height: 270px; */
+	background: url(../img/radio/frame_top.png) no-repeat;
+	margin: 0 0 43px 0;
+	padding: 60px 0 0;
+	clear: both;
+}
+#contents #corner_intro #inner{
+	width: 980px;
+	background: url(../img/radio/frame_inner.png) repeat-y;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+#contents #corner_intro #left_side{
+	width: 480px;
+/* 	height: 270px; */
+	float: left;
+	color: #ff1e7a;
+}
+#contents #corner_intro #right_side{
+	width: 480px;
+/* 	height: 270px; */
+	float: right;
+	color: #0087d0;
+}
+#contents #corner_intro dl dt{
+	width: 480px;
+	height: 25px;
+}
+#contents #corner_intro dl dd{
+	width: 460px;
+	padding: 10px;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+#caution{
+	font-size: 11px;
+	color: #3e3a39;
+}

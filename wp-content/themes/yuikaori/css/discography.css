@@ -1,0 +1,119 @@
+#contents h1 img{
+	width:179px;
+	height:20px;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+}
+#main{
+	margin-bottom: 20px;
+}
+#main .disco_article{
+	display: table;
+	width: 800px;
+	clear: both;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top:1px solid #CED5DD;
+}
+
+#main .disco_article:first-child{
+	margin-top: auto;
+	padding-top: 0;
+	border-top:none;
+}
+.disco_article .disco_jackets{
+	display: block;
+	vertical-align: top;
+	width: 220px;
+	height: 100%;
+	
+	/* margin-right: 40px; */
+	padding: 10px 10px 0;
+	background: url(../img/bg_diagonal.gif);
+}
+.disco_article .disco_jackets ul {overflow: hidden;}
+.disco_article .disco_jackets ul li{
+	margin-bottom: 10px;
+	line-height: 0;
+}
+
+.disco_article .dicso_info{
+	display: table-cell;
+	vertical-align: top;
+	width: 540px;
+	padding-left: 40px;
+	height: 100%;
+}
+.disco_article .dicso_info h3.disco_title_img{
+	margin-bottom: 10px;
+}
+.disco_article .dicso_info h3.disco_date_img{
+	margin:10px auto;
+}
+.disco_article .dicso_info div{
+	margin: 15px 0;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #3e3a39;
+}
+.disco_article .dicso_info div hr{
+	margin: 15px 0;
+}
+
+.disco_article .dicso_info div p strong{
+	font-weight: bold;
+}
+
+.disco_article .dicso_info div ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.disco_article .dicso_info div ol{
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+.disco_list{
+	border-top:1px solid #CED5DD;
+	margin-top:20px;
+}
+.disco_list ul{
+	margin:20px auto 50px -25px;
+	overflow: hidden;
+}
+.disco_list li{
+	width:140px;
+	height: 200px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin:auto auto auto 25px;
+	text-align: center;
+}
+.disco_list li a{
+	display: block;
+	font-size:12px;
+	color: #3e3a39;
+	text-decoration: none;
+}
+.disco_list li h4{
+	font-weight: bold;
+	margin-top:10px;
+}
+.disco_list li a img{
+	border:1px solid #CDD7DF;
+	height:138px;
+	width:auto;
+}
+.disco_list li a:hover img{
+	border:1px solid #0C355E;
+}
+.disco_list li a:hover{
+	color:#0c355e;	
+}
